@@ -18,6 +18,9 @@
 # misc
 .DS_Store
 *.pem
+import*
+data.json
+prueba.json
 
 # debug
 npm-debug.log*

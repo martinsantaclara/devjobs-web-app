@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "company": "Scoot",
+        "logo": "/assets/logos/scoot.svg",
+        "logoDesktop": "/assets/logos/scootDesktop.svg",
+        "logoBackground": "hsl(36, 87%, 49%)",
+        "position": "Senior Software Engineer",
+        "postedAt": "5h ago",
+        "contract": "Full Time",
+        "location": "United Kingdom",
+        "website": "https://example.com/scoot",
+        "apply": "https://example.com/scoot/apply",
+        "description": "Scoot is looking for a Senior Software Engineer passionate about building approachable, innovative and user-first experiences to join our small but growing Engineering team. You will be responsible for building and maintaining front end functionality across all of Scoot’s applications, fostering a growing team of software engineers, and helping drive and maintain best software patterns and practices in our codebase."
+    },
+    {
+        "id": 2,
+        "company": "Blogr",
+        "logo": "/assets/logos/blogr.svg",
+        "logoDesktop": "/assets/logos/blogrDesktop.svg",
+        "logoBackground": "hsl(12, 79%, 52%)",
+        "position": "Haskell and PureScript Dev",
+        "postedAt": "20h ago",
+        "contract": "Part Time",
+        "location": "United States",
+        "website": "https://example.com/blogr",
+        "apply": "https://example.com/blogr/apply",
+        "description": "Blogr is looking for a part-time developer to join our six-strong team of full-stack engineers. Our core development values are strong, static typing and correctness, rigorous automation (in both testing and infrastructure) and everyone having a say."
+    },
+    {
+        "id": 3,
+        "company": "Vector",
+        "logo": "/assets/logos/vector.svg",
+        "logoDesktop": "/assets/logos/vectorDesktop.svg",
+        "logoBackground": "hsl(235, 10%, 23%)",
+        "position": "Midlevel Back End Engineer",
+        "postedAt": "1d ago",
+        "contract": "Part Time",
+        "location": "Russia",
+        "website": "https://example.com/vector",
+        "apply": "https://example.com/vector/apply",
+        "description": "We are looking for a Mid-level Back End Engineer to join our growing software engineering organization. The right person will help move our platform to the next level. You’ll be working as part of a skilled, collaborative team to jointly design and implement high visibility applications."
+    },
+    {
+        "id": 4,
+        "company": "Office Lite",
+        "logo": "/assets/logos/officelite.svg",
+        "logoDesktop": "/assets/logos/officeliteDesktop.svg",
+        "logoBackground": "hsl(227, 62%, 48%)",
+        "position": "Senior Application Engineer",
+        "postedAt": "2d ago",
+        "contract": "Full Time",
+        "location": "Japan",
+        "website": "https://example.com/officelite",
+        "apply": "https://example.com/officelite/apply",
+        "description": "Office Lite is seeking a talented and enthusiastic Senior Application Engineer whose primary responsibility is software architecture and development for Office Lite systems. Additional responsibilities include participation in project time/task estimation, code and architecture reviews, providing support for junior developers, documentation of system architecture and a supporting role for all phases of the development life-cycle (project definition, process mapping, architecture, coding, acceptance testing, installation, turnover to support, etc.)."
+    },
+    {
+        "id": 5,
+        "company": "Pod",
+        "logo": "/assets/logos/pod.svg",
+        "logoDesktop": "/assets/logos/podDesktop.svg",
+        "logoBackground": "hsl(216, 46%, 14%)",
+        "position": "Remote DevOps Engineer",
+        "postedAt": "2d ago",
+        "contract": "Part Time",
+        "location": "Japan",
+        "website": "https://example.com/pod",
+        "apply": "https://example.com/pod/apply",
+        "description": "Join our dynamic team in developing Pod’s core products and supporting infrastructure. Our software is currently written in Java, VB.Net, React Native, React JS and others. You will help lead new initiatives to build and improve the testing, staging and deployment solutions. You will interact with all development teams, development leadership and our hosting/IT staff to define requirements and goals for the Dev Ops Platform."
+    }
+]

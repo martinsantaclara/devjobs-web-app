@@ -19,7 +19,6 @@
 .DS_Store
 *.pem
 import*
-data.json
 prueba.json
 
 # debug

@@ -33,10 +33,13 @@ export const BodyDetailsHeader = styled.div`
 
 export const BodyHeaderLeft = styled.div``;
 
-export const ApplyButton = styled(SubmitButton)`
+export const ApplyButton = styled.a`
+    ${sharedStyleButtons}
+    justify-self: flex-end;
+    text-align: center;
     padding: 1rem;
     margin: ${({ body, mobile }) => (body && mobile ? '3.125rem 0 0' : 0)};
-    width: ${({ mobile }) => (!mobile ? '141px' : '')};
+    width: ${({ mobile, fluid }) => (!mobile ? '141px' : fluid ? '100%' : '')};
     max-width: ${({ fluid }) => (fluid ? '500px' : '')};
 `;
 

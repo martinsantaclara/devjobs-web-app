@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Devjobs web app solution
 
-## Getting Started
+This is a solution to the [Devjobs web app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/devjobs-web-app-HuvC_LP4l).
 
-First, run the development server:
+### The challenge
 
-```bash
-npm run dev
-# or
-yarn dev
+Users should be able to:
+
+-   View the optimal layout for each page depending on their device's screen size
+
+    ![image](https://user-images.githubusercontent.com/50521708/190878231-c2bfcf09-d912-430d-969a-0c4472765d9e.png)
+    ![image](https://user-images.githubusercontent.com/50521708/190877535-e1772933-d595-401e-8f98-a9c451921e09.png)
+    ![image](https://user-images.githubusercontent.com/50521708/190877437-e2ebda61-877d-460f-9dff-50ee6b08b0a5.png)
+
+-   See hover states for all interactive elements throughout the site
+-   Be able to filter jobs on the index page by title, location, and whether a job is for a full-time position
+
+    ![image](https://user-images.githubusercontent.com/50521708/190877705-93c5a523-884c-4a8e-aebe-c2f4d0cfe5cc.png)
+
+-   Be able to click a job from the index page so that they can read more information and apply for the job
+
+    ![image](https://user-images.githubusercontent.com/50521708/190877576-a977b73e-68e7-4560-921b-7104627f7d2e.png)
+    ![image](https://user-images.githubusercontent.com/50521708/190877617-ed043531-d0f7-4ffa-99ff-9c900b7dc396.png)
+
+-   **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
+
+```
+    useEffect(() => {
+        const themeLocalStorage = window.localStorage.getItem('theme');
+        if (themeLocalStorage !== null) {
+            setDarkmode(themeLocalStorage === 'dark');
+        } else {
+            setDarkmode(
+                window.matchMedia &&
+                    window.matchMedia('(prefers-color-scheme: dark)').matches
+            );
+        }
+
+        const modeMe = (e) => {
+            const dark = !!e.matches;
+            setDarkmode(dark);
+            window.localStorage.setItem('theme', dark ? 'dark' : 'light');
+        };
+        window
+            .matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', modeMe);
+        return window
+            .matchMedia('(prefers-color-scheme: dark)')
+            .removeEventListener('change', modeMe);
+    }, []);
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Links
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+-   [Live Site URL](https://frontmentor-devjobs.vercel.app/)
+-   [Solution URL](https://github.com/martinsantaclara/devjobs-web-app.git)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## My process
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Built with
 
-## Learn More
+-   Semantic HTML5 markup
+-   Flexbox
+-   Mobile-first workflow
+-   [Next.js](https://nextjs.org/) - React framework
+-   [Styled Components](https://styled-components.com/) - For styles and themes
+-   [Mongoose](https://mongoosejs.com/) - ODM
+-   [MongoDb](https://www.mongodb.com/) - Database
 
-To learn more about Next.js, take a look at the following resources:
+## Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   Frontend Mentor - [@martinsantaclara](https://www.frontendmentor.io/profile/martinsantaclara)

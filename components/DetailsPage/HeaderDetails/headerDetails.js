@@ -20,6 +20,7 @@ export const HeaderDetails = ({ offer }) => {
     const webSite = `${offer.company.toLowerCase()}.com`.replaceAll(' ', '');
     const { darkMode } = useStateContext();
     const { mobile } = useDeviceContext();
+
     return (
         <HeaderDetailsContainer mobile={mobile}>
             <HeaderDetailsContent mobile={mobile}>
@@ -41,8 +42,9 @@ export const HeaderDetails = ({ offer }) => {
                         inverted
                         darkMode={darkMode}
                         mobile={mobile}
+                        href={offer.website}
                     >
-                        <a href={offer.website}> Company Site</a>
+                        Company Site
                     </CompanySiteButton>
                 </SiteButtonWrapper>
             </HeaderDetailsContent>

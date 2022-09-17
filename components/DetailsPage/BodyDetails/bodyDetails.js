@@ -47,8 +47,8 @@ export const BodyDetails = ({ offer }) => {
                     </Position>
                     <Location>{offer.location}</Location>
                 </BodyHeaderLeft>
-                <ApplyButton fluid body mobile={mobile}>
-                    <a href={offer.apply}> Apply Now</a>
+                <ApplyButton fluid body mobile={mobile} href={offer.apply}>
+                    Apply Now
                 </ApplyButton>
             </BodyDetailsHeader>
             <Description>{offer.description}</Description>

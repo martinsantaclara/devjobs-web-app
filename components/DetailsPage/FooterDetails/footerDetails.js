@@ -21,8 +21,8 @@ export const FooterDetails = ({ offer }) => {
                         <DigitalInc>So Digital Inc</DigitalInc>
                     </FooterDetailsTablet>
                 )}
-                <ApplyButton fluid mobile={mobile}>
-                    <a href={offer.apply}>Apply Now</a>
+                <ApplyButton fluid mobile={mobile} href={offer.apply}>
+                    Apply Now
                 </ApplyButton>
             </FooterDetailsWrapper>
         </FooterDetailsContainer>

@@ -20,6 +20,7 @@
 *.pem
 import*
 prueba.json
+readme.txt
 
 # debug
 npm-debug.log*

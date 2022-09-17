@@ -55,7 +55,7 @@ export const SiteButtonWrapper = styled.div`
     justify-content: flex-end;
 `;
 
-export const CompanySiteButton = styled.button`
+export const CompanySiteButton = styled.a`
     ${sharedStyleButtons}
     padding: 1rem 0;
     width: 9.1875rem;

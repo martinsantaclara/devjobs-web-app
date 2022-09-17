@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { useStateContext } from '../../../context/StateContext';
 import { Container } from '../../../styles/globals';
 import {
@@ -22,7 +23,11 @@ function Header() {
     return (
         <HeaderContainer>
             <Container flxdirection={'row'} align={'center'}>
-                <Logo src={`/assets/logo.svg`} alt={'devjobs logo'} />
+                <Link href={'/home'} passHref>
+                    <a>
+                        <Logo src={`/assets/logo.svg`} alt={'devjobs logo'} />
+                    </a>
+                </Link>
                 <DarkLightTheme>
                     <Sun
                         src={`/assets/icon-sun.svg`}

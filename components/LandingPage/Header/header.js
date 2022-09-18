@@ -23,7 +23,7 @@ function Header() {
     return (
         <HeaderContainer>
             <Container flxdirection={'row'} align={'center'}>
-                <Link href={'/home'} passHref>
+                <Link href={'/home'} passHref prefetch={false}>
                     <a>
                         <Logo src={`/assets/logo.svg`} alt={'devjobs logo'} />
                     </a>

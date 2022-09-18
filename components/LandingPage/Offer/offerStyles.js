@@ -73,7 +73,7 @@ export const Position = styled.h2`
     }
 `;
 
-export const Company = styled.h3`
+export const Company = styled.h1`
     color: ${({ theme, details }) =>
         details ? theme.onSurface1 : theme.onSurface2};
     font-size: ${({ theme, details, mobile }) =>

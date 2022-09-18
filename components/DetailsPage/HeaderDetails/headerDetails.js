@@ -29,7 +29,10 @@ export const HeaderDetails = ({ offer }) => {
                     mobile={mobile}
                     details
                 >
-                    <Logo logo={mobile ? offer.logo : offer.logoDesktop} />
+                    <Logo
+                        company={offer.company}
+                        logo={mobile ? offer.logo : offer.logoDesktop}
+                    />
                 </CompanyLogo>
                 <CompanyData mobile={mobile}>
                     <Company details mobile={mobile}>

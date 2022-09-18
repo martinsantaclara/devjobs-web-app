@@ -30,6 +30,7 @@ export const CompanyLogo = styled.div`
 
 export const Logo = styled.img.attrs((props) => ({
     src: props.logo,
+    alt: `${props.company} logo`,
 }))``;
 
 export const OverTitle = styled.div`

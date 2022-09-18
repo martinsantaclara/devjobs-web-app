@@ -19,7 +19,7 @@ export const Offer = ({ offer }) => {
         <JobOfferWrapper>
             <JobOffer>
                 <CompanyLogo logoBackground={offer.logoBackground}>
-                    <Logo logo={offer.logo} />
+                    <Logo company={offer.company} logo={offer.logo} />
                 </CompanyLogo>
                 <OverTitle>
                     <TimeAgoAndContract>{offer.postedAt}</TimeAgoAndContract>

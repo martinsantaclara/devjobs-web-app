@@ -147,6 +147,7 @@ export const MobileFilter = styled.div`
 
 export const LocationIcon = styled.img.attrs({
     src: '/assets/icon-location.svg',
+    alt: 'location',
 })`
     margin-right: 1rem;
 `;
@@ -171,7 +172,9 @@ export const VLine = styled.hr`
     opacity: 20%;
 `;
 
-export const FulltimeCheck = styled.img`
+export const FulltimeCheck = styled.img.attrs({
+    alt: 'checkbox',
+})`
     cursor: pointer;
     margin-right: 1rem;
 `;

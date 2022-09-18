@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Head from 'next/head';
 import { useDeviceContext, useFilterContext } from '../context/StateContext';
 import { Layout } from '../layout/Layout';
 import Filter from '../components/LandingPage/Filter/filter';
@@ -37,6 +38,11 @@ const Home = ({ Offers }) => {
 
     return (
         <>
+            <Head>
+                <title>devjobs</title>
+                <meta name="description" content="frontmentor challenge" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             {screenWidth !== 0 && Offers && (
                 <Layout>
                     <Filter></Filter>

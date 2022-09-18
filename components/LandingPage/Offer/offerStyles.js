@@ -88,7 +88,7 @@ export const Company = styled.h1`
     margin: ${({ details }) => (details ? '1.5rem 0 0' : '0 0 2.5rem')};
 `;
 
-export const Location = styled.h3`
+export const Location = styled.h2`
     color: ${({ theme }) => theme.primary};
     font-size: ${({ theme }) => theme.fsHeading_xxs}rem;
     font-weight: ${({ theme }) => theme.fwHeading_xxs};

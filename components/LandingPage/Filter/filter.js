@@ -191,7 +191,7 @@ const Filter = () => {
     };
 
     return (
-        <FilterContainer title="Filter Section">
+        <FilterContainer>
             <FilterForm onSubmit={handleSubmit(onSubmit)}>
                 <Input
                     onMouseOver={handleTitleInputHover}

@@ -73,19 +73,12 @@ export const Position = styled.h2`
     }
 `;
 
-export const Company = styled.h1`
-    color: ${({ theme, details }) =>
-        details ? theme.onSurface1 : theme.onSurface2};
-    font-size: ${({ theme, details, mobile }) =>
-        details
-            ? mobile
-                ? theme.fsHeading_sm
-                : theme.fsHeading_md
-            : theme.fsHeading_xs}rem;
-    font-weight: ${({ theme, details }) =>
-        details ? theme.fwHeading_sm : theme.fwHeading_xs};
+export const Company = styled.h2`
+    color: ${({ theme }) => theme.onSurface2};
+    font-size: ${({ theme }) => theme.fsHeading_xs}rem;
+    font-weight: ${({ theme }) => theme.fwHeading_xs};
     line-height: 1.25;
-    margin: ${({ details }) => (details ? '1.5rem 0 0' : '0 0 2.5rem')};
+    margin:'0 0 2.5rem};
 `;
 
 export const Location = styled.h2`

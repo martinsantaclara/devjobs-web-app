@@ -1,10 +1,7 @@
-import {
-    Company,
-    CompanyLogo,
-    Logo,
-} from '../../LandingPage/Offer/offerStyles';
+import { CompanyLogo, Logo } from '../../LandingPage/Offer/offerStyles';
 import {
     CompanyData,
+    CompanyDetails,
     CompanySiteButton,
     CompanyWeb,
     HeaderDetailsContainer,
@@ -35,9 +32,9 @@ export const HeaderDetails = ({ offer }) => {
                     />
                 </CompanyLogo>
                 <CompanyData mobile={mobile}>
-                    <Company details mobile={mobile}>
+                    <CompanyDetails mobile={mobile}>
                         {offer.company}
-                    </Company>
+                    </CompanyDetails>
                     <CompanyWeb>{webSite}</CompanyWeb>
                 </CompanyData>
                 <SiteButtonWrapper>

@@ -34,7 +34,10 @@ function Header() {
                         alt={'Light Theme Icon'}
                     />
                     <ThemeToggle onClick={handleThemeToggle}>
-                        <SwitchTheme darkMode={darkMode}></SwitchTheme>
+                        <SwitchTheme
+                            darkMode={darkMode}
+                            aria-label="switch theme"
+                        ></SwitchTheme>
                     </ThemeToggle>
                     <Moon
                         src={`/assets/icon-moon.svg`}

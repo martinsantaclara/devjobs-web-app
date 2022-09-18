@@ -4,17 +4,19 @@ import { SharedMobileFilter } from '../Filter/filterStyles';
 
 export const JobOffersContainer = styled.section`
     ${GlobalContainer}
-    margin: 4.375rem auto 2rem;
+    margin: 3.5625rem auto 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
     justify-content: center;
     row-gap: 3rem;
     @media ${({ theme }) => theme.breakpoints.md} {
+        margin-top: 4.375rem;
         row-gap: 4rem;
         column-gap: 0.6875rem;
     }
 
     @media ${({ theme }) => theme.breakpoints.xxl} {
+        margin-top: 6.5625rem;
         column-gap: 1.875rem;
     }
 `;

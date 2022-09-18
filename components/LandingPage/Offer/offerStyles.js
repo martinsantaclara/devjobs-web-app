@@ -78,7 +78,7 @@ export const Company = styled.h2`
     font-size: ${({ theme }) => theme.fsHeading_xs}rem;
     font-weight: ${({ theme }) => theme.fwHeading_xs};
     line-height: 1.25;
-    margin:'0 0 2.5rem};
+    margin: 0 0 2.5rem;
 `;
 
 export const Location = styled.h2`

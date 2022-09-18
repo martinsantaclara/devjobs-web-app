@@ -42,7 +42,7 @@ export const CompanyDetails = styled.h1`
         mobile ? theme.fsHeading_sm : theme.fsHeading_md}rem;
     font-weight: ${({ theme }) => theme.fwHeading_sm};
     line-height: 1.25;
-    margin:1.5rem 0 0};
+    margin: 1.5rem 0 0;
 `;
 
 export const CompanyName = styled.h2`

@@ -46,7 +46,6 @@ const Home = ({ Offers }) => {
             {screenWidth !== 0 && Offers && (
                 <Layout>
                     <Filter></Filter>
-
                     <JobOffers Offers={FilteredOffersSplit}></JobOffers>
                     <Pagination
                         offersLength={FilteredOffersSplit.length}
